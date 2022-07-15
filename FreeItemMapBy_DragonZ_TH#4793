@@ -1,0 +1,65 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("FreeItemMapBy:DragonZ_TH#4793", "DarkTheme")
+local Tab = Window:NewTab("CollecPart")
+local Section = Tab:NewSection("Part")
+Section:NewButton("Part1", "", function()
+local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),
+{CFrame = CFrame.new(-343.157837, 2.74376869, 355.075073, -1, 0, 0, 0, 1, 0, 0, 0, -1)}):Play()
+end)
+Section:NewButton("Part2", "", function()
+local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),
+{CFrame = CFrame.new(-3.84208679, 64.680191, -197.82515, -1, 0, 0, 0, 1, 0, 0, 0, -1)}):Play()
+end)
+Section:NewButton("Part3", "", function()
+local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),
+{CFrame = CFrame.new(-161.922043, 37.7588463, -147.204834, -0.923186421, 0.380275965, -0.0558322035, 0.345040321, 0.755971551, -0.556286037, -0.16933465, -0.532820046, -0.829113245)}):Play()
+end)
+Section:NewButton("Part4", "", function()
+local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),
+{CFrame = CFrame.new(155.793045, 46.2437439, -52.8441086, -0.897622228, 0, 0.440766424, 0, 1, 0, -0.440766424, 0, -0.897622228)}):Play()
+end)
+local Tab = Window:NewTab("Vote")
+local Section = Tab:NewSection("Vote")
+Section:NewButton("1ClickVote", "Click To Vote", function()
+
+local args = {
+    [1] = {
+        ["Best Content Update"] = "Tower Defense Simulator - Live Update Events",
+        ["People's Choice"] = "Adopt Me",
+        ["Best Use of Avatar Fashion"] = "World // Zero",
+        ["Video Star of the Year"] = "ItsFunneh"
+    },
+    [2] = workspace.VotingScreen
+}
+
+game:GetService("ReplicatedStorage").Events.RemoteEvents.Vote:FireServer(unpack(args))
+
+end)
+local Tab = Window:NewTab("Photo")
+local Section = Tab:NewSection("Photo")
+Section:NewButton("Photo", "Click him", function()
+    
+game:GetService("ReplicatedStorage").Events.RemoteEvents.Photobooth:FireServer()
+
+end)
+local Tab = Window:NewTab("replay")
+local Section = Tab:NewSection("replay")
+Section:NewButton("replay", "Click him", function()
+    
+local TeleportService = game:GetService("TeleportService")
+TeleportService:Teleport(9377039667 , player)
+
+end)
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("SpeedPlayer")
+Section:NewSlider("SpeedPlayer", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewSlider("JumpPower", "SliderInfo", 1000, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
