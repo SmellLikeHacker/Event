@@ -1,0 +1,72 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Event Fashion Klossette Designer Showcase", "DarkTheme")
+local Tab = Window:NewTab("Event")
+local Section = Tab:NewSection("RobeatDay1")
+Section:NewButton("Step1", "Click him", function()
+    local TeleportService = game:GetService("TeleportService")
+
+TeleportService:Teleport(698448212, player)
+
+end)
+Section:NewButton("Step2","Click him", function()
+game:GetService("ReplicatedStorage").KKShared.lib.Network.TRAIN_ENTER:FireServer()
+wait (1)
+local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),
+{CFrame = CFrame.new(1384.57092, 25.5186386, -868.685852, -0.999916434, 5.85378013e-09, -0.012928105, 6.69276812e-09, 1, -6.48531895e-08, 0.012928105, -6.49342979e-08, -0.999916434)}):Play()
+
+end)
+
+local Section = Tab:NewSection("Fashion FamousDay2")
+Section:NewButton("Step1", "", function()
+    
+local TeleportService = game:GetService("TeleportService")
+
+TeleportService:Teleport(568350650, player)
+end)
+
+Section:NewButton("Step2", "", function()
+    
+local TeleportService = game:GetService("TeleportService")
+
+TeleportService:Teleport(10188861333, player)
+end)
+
+Section:NewButton("Step3","TweenToReward", function()
+local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),
+{CFrame = CFrame.new(-144.486694, 10.4043636, 264.220734, -0.795495689, -1.02090311e-07, 0.605959237, -5.08864026e-08, 1, 1.01674161e-07, -0.605959237, 5.00462747e-08, -0.795495689)}):Play()
+end)
+local Tab = Window:NewTab("Event2")
+local Section = Tab:NewSection("Roblox High School 2 Day3")
+
+Section:NewButton("Step1", "", function()
+    
+local TeleportService = game:GetService("TeleportService")
+
+TeleportService:Teleport(2098516465, player)
+end)
+
+Section:NewButton("Step2","Click him", function()
+local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),
+{CFrame = CFrame.new(-5970.17236, -3463.60522, -2393.69385, -0.790298283, 3.71100262e-10, 0.612722337, 3.64994657e-09, 1, 4.10209644e-09, -0.612722337, 5.4782836e-09, -0.790298283)}):Play()
+end)
+local Section = Tab:NewSection("Livetopia Day4")
+Section:NewButton("Step1", "", function()
+    
+local TeleportService = game:GetService("TeleportService")
+
+TeleportService:Teleport(6737970321, player)
+end)
+Section:NewButton("Step2", "", function()
+    
+local TeleportService = game:GetService("TeleportService")
+
+TeleportService:Teleport(10195687887, player)
+end)
+Section:NewButton("Step3","TweenToReward", function()
+local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),
+{CFrame = CFrame.new(-81.379921, 29.1512089, 64.369606, -0.964557946, 1.4372092e-08, 0.263871193, -1.34333178e-09, 1, -5.93767489e-08, -0.263871193, -5.76267816e-08, -0.964557946)}):Play()
+end)
