@@ -70,3 +70,21 @@ local TweenService = game:GetService("TweenService")
 local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),
 {CFrame = CFrame.new(-81.379921, 29.1512089, 64.369606, -0.964557946, 1.4372092e-08, 0.263871193, -1.34333178e-09, 1, -5.93767489e-08, -0.263871193, -5.76267816e-08, -0.964557946)}):Play()
 end)
+local Tab = Window:NewTab("Event3")
+local Section = Tab:NewSection("Mermaid Life 🏠Day5")
+Section:NewButton("Step1", "Click him", function()
+    local TeleportService = game:GetService("TeleportService")
+
+TeleportService:Teleport(4377254026, player)
+end)
+Section:NewButton("Step2", "", function()
+    
+local TeleportService = game:GetService("TeleportService")
+
+TeleportService:Teleport(10237692685, player)
+end)
+Section:NewButton("Step3","TweenToReward", function()
+local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),
+{CFrame = CFrame.new(-0.823071897, 31.6972408, -47.6870193, -0.976567566, -7.15307209e-08, 0.21521093, -8.0649329e-08, 1, -3.35893802e-08, -0.21521093, -5.0158917e-08, -0.976567566)}):Play()
+end)
